@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HEREjercicio2Guia12">
+  <ClassDiagramComponents>
+    <Class name="HEREjercicio2Guia12" package="G12E03" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Electrodomestico" package="herejercicio2guia12.Entidades" visibility="public" xPosition="20.0" yPosition="187.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoE" type="char" visibility="protected"/>
+        <Field name="peso" type="Double" visibility="protected"/>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoE"/>
+          <Argument type="Double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="Double" name="precio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getConsumoE" returnType="char" visibility="public"/>
+        <Method name="setConsumoE" returnType="void" visibility="public">
+          <Argument type="char" name="consumoE"/>
+        </Method>
+        <Method name="getPeso" returnType="Double" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="Double" name="peso"/>
+        </Method>
+        <Method name="comprobarConsumoEnergetico" returnType="char" visibility="public">
+          <Argument type="char" name="let"/>
+        </Method>
+        <Method name="comprobarColor" returnType="String" visibility="private">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="crearElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+        <Method name="mostrarElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="herejercicio2guia12.Entidades" visibility="public" xPosition="578.0" yPosition="106.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+          <Argument type="Double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoE"/>
+          <Argument type="Double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCarga" returnType="int" visibility="public"/>
+        <Method name="setCarga" returnType="void" visibility="public">
+          <Argument type="int" name="carga"/>
+        </Method>
+        <Method name="crearLavadora" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+        <Method name="mostrarElectrodomestico" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElectrodomesticoServicio" package="herejercicio2guia12.Entidades.Servicios" visibility="public" xPosition="1056.0" yPosition="241.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Televisor" package="herejercicio2guia12.Entidades" visibility="public" xPosition="529.0" yPosition="377.0">
+      <Fields>
+        <Field name="pulgadas" type="double" visibility="protected"/>
+        <Field name="sintonizadorTDT" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="pulgadas"/>
+          <Argument type="boolean" name="sintonizadorTDT"/>
+          <Argument type="Double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoE"/>
+          <Argument type="Double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPulgadas" returnType="double" visibility="public"/>
+        <Method name="setPulgadas" returnType="void" visibility="public">
+          <Argument type="double" name="pulgadas"/>
+        </Method>
+        <Method name="isSintonizadorTDT" returnType="boolean" visibility="public"/>
+        <Method name="setSintonizadorTDT" returnType="void" visibility="public">
+          <Argument type="boolean" name="sintonizadorTDT"/>
+        </Method>
+        <Method name="crearTelevisor" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="Color" package="herejercicio2guia12.Entidades.Enum" visibility="public" xPosition="356.0" yPosition="2.0">
+      <Literals>
+        <Literal name="BLANCO"/>
+        <Literal name="NEGRO"/>
+        <Literal name="ROJO"/>
+        <Literal name="AZUL"/>
+        <Literal name="GRIS"/>
+      </Literals>
+    </Enum>
+    <Enum name="Color" package="herejercicio2guia12.Entidades.Enumeracion" visibility="public" xPosition="1084.0" yPosition="20.0">
+      <Literals>
+        <Literal name="BLANCO"/>
+        <Literal name="NEGRO"/>
+        <Literal name="AZUL"/>
+        <Literal name="ROJO"/>
+        <Literal name="GRIS"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="herejercicio2guia12.Entidades.Lavadora" target="herejercicio2guia12.Entidades.Electrodomestico"/>
+    <IsRelation name="is" source="herejercicio2guia12.Entidades.Televisor" target="herejercicio2guia12.Entidades.Electrodomestico"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
